@@ -1,4 +1,4 @@
-// Single Inheritance 
+// Q 11. Write a program of single level inheritance? 
 // vaibhav bansal 22017C04069
 
 class A {
@@ -40,7 +40,7 @@ class B extends A {
     }
 }
 
-public class Single {
+public class Vaibhav_11 {
     public static void main(String[] args) {
         B obj = new B(100, "Hello from Class B");
         

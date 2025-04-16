@@ -1,4 +1,4 @@
-// Hierarchical Inheritance 
+// Q 13. Write a program of hierarchical inheritance? 
 // vaibhav bansal 22017C04069
 
 class Animal {
@@ -43,7 +43,7 @@ class Cat extends Animal {
     }
 }
 
-public class Hierarchical {
+public class Vaibhav_13 {
     public static void main(String[] args) {
         Dog dog = new Dog("German Shepherd");
         Cat cat = new Cat("White");

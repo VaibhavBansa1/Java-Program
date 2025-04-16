@@ -1,4 +1,4 @@
-// Multiple Inheritance using Interfaces
+// Q 16. Write a program of multiple inheritance?
 // vaibhav bansal 22017C04069
 
 interface Printable {
@@ -51,7 +51,7 @@ class Information implements Printable, Showable {
     }
 }
 
-public class Multiple {
+public class Vaibhav_16 {
     public static void main(String[] args) {
         Information info1 = new Information("Hello from Multiple Inheritance!", "Vaibhav");
         Information info2 = new Information("Another message example", "System");

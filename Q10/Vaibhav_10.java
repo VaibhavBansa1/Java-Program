@@ -1,4 +1,4 @@
-// constructor overloading 
+// Q10. Write a program of constructor overloading? 
 // vaibhav bansal 22017C04069
 
 class Student {
@@ -44,7 +44,7 @@ class Student {
     }
 }
 
-public class Mul_cons{
+public class Vaibhav_10{
     public static void main(String[] args) {
         // Creating one object and using different constructors
         System.out.println("Using different constructors with one object:");

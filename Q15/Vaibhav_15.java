@@ -1,4 +1,4 @@
-// simple abstract class example
+// Q 15. Write a program of abstract?
 // vaibhav bansal 22017C04069
 
 abstract class Shape {
@@ -62,7 +62,7 @@ class Rectangle extends Shape {
     }
 }
 
-public class Abstract {
+public class Vaibhav_15 {
     public static void main(String[] args) {
         Circle circle = new Circle("My Circle", 5);
         Rectangle rectangle = new Rectangle("My Rectangle", 4, 6);

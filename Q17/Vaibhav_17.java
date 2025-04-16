@@ -1,34 +1,25 @@
-// Hybrid Inheritance Example (Multiple + Multilevel)
+// Q 17. Write a program of hybrid inheritance? (Multiple + Multilevel)
 // vaibhav bansal 22017C04069
 
-// First interface - defines studying behavior
 interface Student {
-    // Method declaration - no implementation
-    void study();  // Any class implementing Student MUST define this method
-    
-    // Method to get study hours
+    void study();
     int getStudyHours();
 }
 
-// Second interface - defines working behavior
 interface Worker {
-    // Method declarations
-    void work();  // Any class implementing Worker MUST define this method
+    void work();
     int getSalary();
 }
 
-// Base class for all persons
 class Person {
     private String name;
     private int age;
     
-    // Constructor
     public Person(String name, int age) {
         this.name = name;
         this.age = age;
     }
     
-    // Method to display person details
     public void displayInfo() {
         System.out.println("\nPerson Details:");
         System.out.println("Name: " + name);
@@ -36,8 +27,6 @@ class Person {
     }
 }
 
-// Intern class inherits Person class AND implements both interfaces
-// This is Hybrid Inheritance (Multilevel through class + Multiple through interfaces)
 class Intern extends Person implements Student, Worker {
     private int studyHours;
     private int salary;
@@ -45,13 +34,12 @@ class Intern extends Person implements Student, Worker {
     
     // Constructor
     public Intern(String name, int age, int studyHours, int salary, String company) {
-        super(name, age);  // Call Person constructor
+        super(name, age);
         this.studyHours = studyHours;
         this.salary = salary;
         this.company = company;
     }
     
-    // Implementing Student interface methods
     @Override
     public void study() {
         System.out.println("Studying for " + studyHours + " hours");
@@ -62,7 +50,6 @@ class Intern extends Person implements Student, Worker {
         return studyHours;
     }
     
-    // Implementing Worker interface methods
     @Override
     public void work() {
         System.out.println("Working at " + company);
@@ -73,14 +60,11 @@ class Intern extends Person implements Student, Worker {
         return salary;
     }
     
-    // Additional method to show all details
     public void showAllDetails() {
-        // Call parent class method
         displayInfo();
         
         System.out.println("\nIntern Details:");
         System.out.println("---------------");
-        // Use interface methods
         study();
         work();
         System.out.println("Salary: Rs." + getSalary());
@@ -88,34 +72,30 @@ class Intern extends Person implements Student, Worker {
     }
 }
 
-public class Hybrid {
+public class Vaibhav_17 {
     public static void main(String[] args) {
-        // Create an Intern object
         Intern intern = new Intern(
             "Vaibhav", 
             20, 
-            4,      // study hours
-            15000,  // salary
+            4,
+            15000,
             "Tech Corp"
         );
         
-        // Display all information
         intern.showAllDetails();
         
-        // We can also use the intern object as any of its types:
         System.out.println("\nDemonstrating Multiple Types:");
         System.out.println("----------------------------");
         
-        // As a Student
         Student student = intern;
-        student.study();  // Only Student methods available here
+        student.study();
         
         // As a Worker
         Worker worker = intern;
-        worker.work();    // Only Worker methods available here
+        worker.work();
         
         // As a Person
         Person person = intern;
-        person.displayInfo();  // Only Person methods available here
+        person.displayInfo();
     }
 }

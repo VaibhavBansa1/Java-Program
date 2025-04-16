@@ -1,4 +1,4 @@
-// Print even and odd b/w 1 to 100
+// Q3. Write a program to print even and odd numbers between 1 to 100?
 // vaibhav bansal 22017C04069
 
 class NumberSeparator {
@@ -19,7 +19,7 @@ class NumberSeparator {
     }
 }
 
-public class Odd_Even {
+public class Vaibhav_03 {
     public static void main(String[] args) {
         NumberSeparator obj = new NumberSeparator();
         obj.findEvenOdd();

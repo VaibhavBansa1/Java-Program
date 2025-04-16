@@ -1,4 +1,4 @@
-// Multilevel Inheritance 
+// Q 12. Write a program of multi-level inheritance? 
 // vaibhav bansal 22017C04069
 
 class Vehicle {
@@ -69,7 +69,7 @@ class ElectricCar extends Car {
     }
 }
 
-public class Multilevel {
+public class Vaibhav_12 {
     public static void main(String[] args) {
         SportsCar sportsCar = new SportsCar("Ferrari", 4, 320);
         sportsCar.showDetails();

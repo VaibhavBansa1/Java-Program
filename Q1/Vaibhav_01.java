@@ -1,5 +1,5 @@
 
-// add, multiple subtract with 3 marks.
+// Q1. Write a program to add, multiply, subtract three numbers?
 // vaibhav bansal 22017C04069
 
 class Add {
@@ -32,7 +32,7 @@ class Mul {
     }
 }
 
-public class Math_Cal {
+public class Vaibhav_01 {
     public static void main(String[] args) {
         Add add_val = new Add();
         Sub sub_val = new Sub();

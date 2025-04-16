@@ -1,4 +1,4 @@
-// Find Area of Circle, Square, Rectangle, Triangle using int return type
+// Q6. Write a program to calculate area of circle, square, rectangle, and triangle (using return type function)?
 // vaibhav bansal 22017C04069
 
 class Circle {
@@ -29,7 +29,7 @@ class Triangle {
     }
 }
 
-public class Calc {
+public class Vaibhav_06 {
     public static void main(String[] args) {
         Circle circle = new Circle();
         Square square = new Square();

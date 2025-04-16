@@ -1,4 +1,4 @@
-// Method Overloading 
+// Q9. Write a program of method overloading?
 // vaibhav bansal 22017C04069
 
 class Calculate {
@@ -20,7 +20,7 @@ class Calculate {
 
 }
 
-public class Met_overload {
+public class Vaibhav_09 {
     public static void main(String[] args) {
         Calculate calc = new Calculate();
     

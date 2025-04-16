@@ -1,4 +1,4 @@
-// Find Area of Circle, Square, Rectangle, Triangle using int return type with parametrized constructor
+// Q 7. Write a program of parametrized constructor?
 // vaibhav bansal 22017C04069
 
 class Circle {
@@ -50,7 +50,7 @@ class Triangle {
     }
 }
 
-public class Calc {
+public class Vaibhav_07 {
     public static void main(String[] args) {
         Circle circle = new Circle(5);
         Square square = new Square(4);

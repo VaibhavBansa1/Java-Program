@@ -1,4 +1,4 @@
-// multiple object one constructor
+// Q8. Write a program of parametrized constructor with multiple objects?
 // vaibhav bansal 22017C04069
 class Student {
     String name;
@@ -21,7 +21,7 @@ class Student {
     }
 }
 
-public class Mul_obj {
+public class Vaibhav_08 {
     public static void main(String[] args) {
         // Creating multiple objects using the same constructor
         Student student1 = new Student("John Doe", 101, 20);

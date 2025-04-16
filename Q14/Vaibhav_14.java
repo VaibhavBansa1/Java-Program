@@ -1,4 +1,4 @@
-// method overriding
+// Q 14. Write a program of method overriding?
 // vaibhav bansal 22017C04069
 
 class Animal {
@@ -55,7 +55,7 @@ class Cat extends Animal {
     }
 }
 
-public class Met_override {
+public class Vaibhav_14 {
     public static void main(String[] args) {
         Animal genericAnimal = new Animal("Generic Animal");
         Dog dog = new Dog("Max", "German Shepherd");
